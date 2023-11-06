@@ -1,6 +1,6 @@
 Config = {}	
 
-Config.DevMode                             = true
+Config.DevMode                             = false
 
 Config.SaveInDatabase                      = false -- If set to true, all the alerts will be saved in the tp_alerts database table.
 
