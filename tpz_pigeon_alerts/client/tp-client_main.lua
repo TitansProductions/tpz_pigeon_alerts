@@ -421,6 +421,8 @@ Citizen.CreateThread(function()
 								EntityHandler.Pigeon = nil
 								
 							end
+
+							Wait(2000)
 						end
 					end
 				end
