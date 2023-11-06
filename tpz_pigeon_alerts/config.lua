@@ -54,7 +54,7 @@ Config.Stores = {
     ['Guarma'] = {
         Title = "Guarma - Trained Pigeons",
 
-        Coords = {x = 1371.032, y = -7014.02, z = 56.471, h = 9.7552833557129},
+        Coords = {x = 1374.555, y = -7012.58, z = 56.632, h = 99.767318725586},
 
         BlipData = {
             Enabled = true,
@@ -67,7 +67,7 @@ Config.Stores = {
         NPCData = {
             Enabled = true,
             Model = "cs_exconfedsleader_01",
-            Coords = {x = 1371.032, y = -7014.02, z = 55.471, h = 9.755283355712},
+            Coords = {x = 1374.555, y = -7012.58, z = 55.632, h = 99.767318725586},
         },
 
         DistanceOpenStore = 1.5,
