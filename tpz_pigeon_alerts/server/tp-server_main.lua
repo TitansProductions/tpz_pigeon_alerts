@@ -17,8 +17,6 @@ end)
 RegisterServerEvent("tpz_pigeon_alerts:onMedicPlayerRouteStarted")
 AddEventHandler("tpz_pigeon_alerts:onMedicPlayerRouteStarted", function(targetSource)
 	local _source = tonumber(targetSource)
-
-	TriggerClientEvent("vorp_core:onUnconsciousPlayerTimeExpanding", _source)
 	TriggerClientEvent('tpz_core:sendRightTipNotification', _source, Locales['NPC_ON_ITS_WAY'], 5000)
 end)
 
@@ -172,13 +170,13 @@ AddEventHandler("tpz_pigeon_alerts:removeRequiredItems", function()
 	if Config.AlertRequirements.Enabled then
 		
 		if Config.AlertRequirements.RequiredPaperItem.removeItem then
-			VorpInv.removeItem(_source, Config.AlertRequirements.RequiredPaperItem.item, 1)
+			TPZInv.removeItem(_source, Config.AlertRequirements.RequiredPaperItem.item, 1)
 		end
 
 		local penData = Config.AlertRequirements.RequiredPenItem
 
 		if penData.removeItem then
-			VorpInv.removeItem(_source, penData.item, 1)
+			TPZInv.removeItem(_source, penData.item, 1)
 
 		elseif not penData.removeItem and penData.removeDurability then
 			TPZInv.removeItemDurability(_source, penData.item, penData.removeDurability, nil, true)
